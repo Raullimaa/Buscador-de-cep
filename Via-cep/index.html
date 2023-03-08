@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+   <link rel="stylesheet" href="style.css">
+   <script src="script.js" defer></script>
+   <title>Buscador de CEP</title>
+</head>
+<body>
+   <header>
+
+      <div id="header-container">
+         <h1>Buscar Cep</h1>
+         <img src="img/completar-endereco-cep.png" alt="imagem_casa">
+      </div>
+   </header>
+   <main>
+   <form>
+
+      <div class="topo">
+         <input type="text" id="cep" placeholder="Digite o cep" maxlength="9">
+         <button onclick="BuscarDadosCep(event)">Buscar CEP</button>
+      </div>
+
+      <div class="dados">
+
+         <div class="form-group">
+            <label for="logradouro">Rua</label>
+            <input id="logradouro" type="text" disabled>
+         </div>
+
+         <div class="form-group">
+            <label for="complemento">Complemento</label>
+            <input id="complemento" type="text" >
+         </div>
+
+         <div class="form-group">
+            <label for="bairro">Bairro</label>
+            <input id="bairro" type="text" disabled>
+         </div>
+
+         <div class="form-group">
+            <label for="localidade">Cidade</label>
+            <input id="localidade" type="text" disabled>
+         </div>
+
+         <div class="form-group">
+            <label for="uf">Estado</label>
+            <input id="uf" type="text" disabled>
+         </div>
+
+      </div>
+
+   </form>
+
+   <div id="loading" class="loading">
+      <span class="loader"></span>
+   </div>
+
+
+</main> 
+</body>
+
+</html>
